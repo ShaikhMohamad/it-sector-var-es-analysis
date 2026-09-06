@@ -32,6 +32,30 @@ st.write(
 
 df = pd.read_excel("data/Portfolio_Returns_Merged.xlsx")
 
+return_columns = [
+    'TCS_Day_Return', 'COFORGE_Day_Return', 'HCLTECH_Day_Return',
+    'INFY_Day_Return', 'LTM_Day_Return', 'LTTS_Day_Return',
+    'MPHASIS_Day_Return', 'PERSISTENT_Day_Return', 'TECHM_Day_Return',
+    'WIPRO_Day_Return',
+
+    'TCS_5Day_Return', 'COFORGE_5Day_Return', 'HCLTECH_5Day_Return',
+    'INFY_5Day_Return', 'LTM_5Day_Return', 'LTTS_5Day_Return',
+    'MPHASIS_5Day_Return', 'PERSISTENT_5Day_Return', 'TECHM_5Day_Return',
+    'WIPRO_5Day_Return',
+
+    'TCS_30Day_Return', 'COFORGE_30Day_Return', 'HCLTECH_30Day_Return',
+    'INFY_30Day_Return', 'LTM_30Day_Return', 'LTTS_30Day_Return',
+    'MPHASIS_30Day_Return', 'PERSISTENT_30Day_Return', 'TECHM_30Day_Return',
+    'WIPRO_30Day_Return',
+
+    'TCS_90Day_Return', 'COFORGE_90Day_Return', 'HCLTECH_90Day_Return',
+    'INFY_90Day_Return', 'LTM_90Day_Return', 'LTTS_90Day_Return',
+    'MPHASIS_90Day_Return', 'PERSISTENT_90Day_Return', 'TECHM_90Day_Return',
+    'WIPRO_90Day_Return'
+]
+
+for column in return_columns:
+    df[column] = pd.to_numeric(df[column], errors="coerce")
 
 # =========================================================================
 # CORRELATION MATRIX
