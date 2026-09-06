@@ -1,5 +1,22 @@
 # IT Sector Portfolio VaR & Expected Shortfall Analysis
 
+## 🚀 Live Dashboard
+
+Try the interactive Streamlit dashboard:
+
+**[Open IT Sector Portfolio VaR & ES Dashboard](https://shaikhmohamad-it-sector-var-es-analysis-app-yjnjrk.streamlit.app/)**
+
+The dashboard allows users to:
+
+* Enter custom portfolio investments
+* Calculate portfolio weights dynamically
+* Compare Historical and Parametric VaR
+* Calculate Historical and Parametric Expected Shortfall (ES)
+* Analyse VaR breaches
+* Perform Kupiec POF backtesting
+* View correlation and covariance matrices
+* Explore the underlying dataset
+
 ## Overview
 
 This project is a market risk analytics application designed to measure and evaluate the downside risk of an equally/user-weighted portfolio of Indian IT sector stocks.
